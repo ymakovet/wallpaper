@@ -8,16 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CF4A811323D9AF0500E7C606 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4A811223D9AF0500E7C606 /* SceneDelegate.swift */; };
+		CF86455823D9BEA800C22D52 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86455723D9BEA800C22D52 /* UIViewController+Extensions.swift */; };
+		CF86455A23D9DAC600C22D52 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF86455923D9DAC600C22D52 /* MainViewController.swift */; };
 		CFC95AAC23D5FFA0009C370C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC95AAB23D5FFA0009C370C /* AppDelegate.swift */; };
 		CFC95AB023D5FFA0009C370C /* WallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC95AAF23D5FFA0009C370C /* WallViewController.swift */; };
 		CFC95AB323D5FFA0009C370C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC95AB123D5FFA0009C370C /* Main.storyboard */; };
 		CFC95AB523D5FFA5009C370C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC95AB423D5FFA5009C370C /* Assets.xcassets */; };
 		CFC95AB823D5FFA5009C370C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC95AB623D5FFA5009C370C /* LaunchScreen.storyboard */; };
-		CFE8329823D774820074BB17 /* GeneralPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE8329723D774820074BB17 /* GeneralPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF4A811223D9AF0500E7C606 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF86455723D9BEA800C22D52 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		CF86455923D9DAC600C22D52 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CFC95AA823D5FFA0009C370C /* wallpaper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wallpaper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFC95AAB23D5FFA0009C370C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFC95AAF23D5FFA0009C370C /* WallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +28,6 @@
 		CFC95AB423D5FFA5009C370C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFC95AB723D5FFA5009C370C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFC95AB923D5FFA5009C370C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFE8329723D774820074BB17 /* GeneralPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF94032C23DA099300D00025 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CFC95AAF23D5FFA0009C370C /* WallViewController.swift */,
+				CF86455923D9DAC600C22D52 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF94032D23DA09A100D00025 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF86455723D9BEA800C22D52 /* UIViewController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF94032E23DA09B700D00025 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CFC95AB123D5FFA0009C370C /* Main.storyboard */,
+				CFC95AB623D5FFA5009C370C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		CFC95A9F23D5FFA0009C370C = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +87,11 @@
 			isa = PBXGroup;
 			children = (
 				CFC95AAB23D5FFA0009C370C /* AppDelegate.swift */,
-				CFC95AAF23D5FFA0009C370C /* WallViewController.swift */,
 				CF4A811223D9AF0500E7C606 /* SceneDelegate.swift */,
-				CFE8329723D774820074BB17 /* GeneralPageViewController.swift */,
-				CFC95AB123D5FFA0009C370C /* Main.storyboard */,
+				CF94032C23DA099300D00025 /* Controllers */,
+				CF94032D23DA09A100D00025 /* Extensions */,
+				CF94032E23DA09B700D00025 /* Storyboards */,
 				CFC95AB423D5FFA5009C370C /* Assets.xcassets */,
-				CFC95AB623D5FFA5009C370C /* LaunchScreen.storyboard */,
 				CFC95AB923D5FFA5009C370C /* Info.plist */,
 			);
 			path = wallpaper;
@@ -141,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE8329823D774820074BB17 /* GeneralPageViewController.swift in Sources */,
 				CFC95AB023D5FFA0009C370C /* WallViewController.swift in Sources */,
 				CFC95AAC23D5FFA0009C370C /* AppDelegate.swift in Sources */,
+				CF86455A23D9DAC600C22D52 /* MainViewController.swift in Sources */,
 				CF4A811323D9AF0500E7C606 /* SceneDelegate.swift in Sources */,
+				CF86455823D9BEA800C22D52 /* UIViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +323,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ymakovet.wallpaper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymakovet.wallpaperapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -313,7 +341,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ymakovet.wallpaper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ymakovet.wallpaperapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
